@@ -24,7 +24,7 @@ jobs:
         uses: github/codeql-action/init@main
         with:
           languages: javascript
-          packs: codeql/javascript-experimental-atm-queries@0.0.6
+          packs: codeql/javascript-experimental-atm-queries@0.1.0
           tools: latest
           debug: true
 
