@@ -92,13 +92,13 @@ jobs:
           output: '.github/codeql/codeql-javascript-atm/results'
 
       - name: Upload SARIF results output
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: javascript-atm.sarif
           path: .github/codeql/codeql-javascript-atm/results/*.sarif
       
       - name: Upload CodeQL database
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: codeql-database
           path: '${{ github.workspace }}/codeql-database'
